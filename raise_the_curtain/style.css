@@ -1,0 +1,15 @@
+:root {
+    --minh: 98vh;
+    --color1: wheat;
+    --color2: midnightblue;
+}
+
+.curtain {
+    background-image: linear-gradient(to bottom, var(--color2) 50%, var(--color1) 50%);
+}
+
+.curtain::after {
+    content: "";
+    display: block;
+    min-height: var(--minh);
+}
